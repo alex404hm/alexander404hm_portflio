@@ -1,1 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-56TN8Q2F');</script>
+  <!-- End Google Tag Manager -->
+
+
+  <meta charset="UTF-8" />
+  <meta property="og:locale" content="da-DK" />
+<meta property="og:type" content="website" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#000" />
+  <meta name="description" content="Alexander Holm | Portfolio - Discover my projects and designs, where I prioritize simple content structure, clean design patterns, and thoughtful interactions." />
+  <meta name="keywords" content="Alexander Holm Mortensen, Alexander Holm Mortensen portfolio, Alexander Holm Mortensen website, Alexander Holm Mortensen projects, Alexander Holm Mortensen designs, Alexander Holm Mortensen web developer, Alexander Holm Mortensen frontend developer, Alexander Holm Mortensen coding, Alexander Holm Mortensen programming, Alexander Holm Mortensen GitHub, Alexander Holm Mortensen uiverse, frontend developer, web developer, UI/UX designer, JavaScript developer, HTML/CSS expert, React developer, Node.js developer, Alexander Holm Mortensen" />
+  <meta name="author" content="Alexander Holm" />
+  <meta property="og:image" content="https://alexander-holm.com/man.png" />
+  <meta property="og:title" content="Alexander Holm | Portfolio" />
+  <meta property="og:description" content="Alexander Holm | Portfolio - Discover my projects and designs, where I prioritize simple content structure, clean design patterns, and thoughtful interactions." />
+<link rel="sitemap" href="./sitemap.xml" type="text/plain" title="Sitemap" />
+  <meta property="og:url" content="https://alexander-holm.com" />
+  <meta property="og:site_name" content="Alexander Holm Portfolio" />
+
+  <meta name="twitter:image:src" content="https://alexander-holm.com/man.png" />
+  <meta name="twitter:site" content="@Portfolio" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Alexander Holm | Portfolio" />
+  <meta name="twitter:description"
+    content="Alexander Holm | Portfolio - Discover my projects and designs, where I prioritize simple content structure, clean design patterns, and thoughtful interactions." />
+  <title>Alexander Holm | Portfolio</title>
+  <link rel="icon" type="image/x-icon" href="man.png" />
+  <!-- aos cdn -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- google fonts-->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Passions+Conflict&family=Orbitron&family=Fira+Code&family=Six+Caps" />
+
+<body class="body">
+  <audio loop="" id="audioPlayer" style="display: none">
+    <source src="src/mp3/preloader.mp3" type="audio/mp3" />
+  </audio>
+  <div id="preloader"></div>
+  <noscript>Allow Javascript</noscript>
+
+  <header>
+    <div class="cursor-inner" id="cursor-inner"></div>
+    <div class="cursor-outer" id="cursor-outer"></div>
+
+    <div class="navbar" id="navbar">
+      <div class="hey">Error!</div>
+      <div class="logo" tabindex="0" aria-label="Alexander Holm logo">
+        <div class="logo-top">
+          <img src="man.png" alt="animation-head" id="nav-avatar" class="img2" style="background-size:-303px;">
+          <style>
+            .img2 {
+              margin-top: 15px;
+            }
+          </style>
+        </div>
+      </div>
+      <div class="navbar-tabs" id="navbar-tabs">
+        <ul class="navbar-tabs-ul">
+          <li class="home activeThistab" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="100">
+            <a href="#home" tabindex="0" aria-label="Home menu button">
+              &#60;/Home&#62;
+            </a>
+          </li>
+
+          <li class="about" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="300">
+            <a href="#about" aria-label="about menu button">
+              &#60;/AboutMe&#62;
+            </a>
+          </li>
+
+          <li class="skills" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="500">
+            <a href="#skills" aria-label="skills menu button">
+              &#60;/Skills&#62;
+            </a>
+          </li>
+
+          <li class="projects" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="700">
+            <a href="#projects" aria-label="projects menu button">
+              &#60;/Projects&#62;
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- navbar tabs ends -->
+    </div>
+  </header>
+  <!-- header ends here -->
+
+  <main>
+    <!-- hamburger -->
+    <div class="hamburger" id="hamburger" data-aos="fade">
+      <div class="hamburgerbase">
+        <button id="hamburger-button" onclick="hamburgerMenu()" tabindex="0" aria-label="Menu Button">
+          <span class="burger-bar" id="burger-bar1"></span>
+          <span class="burger-bar" id="burger-bar2"></span>
+          <span class="burger-bar" id="burger-bar3"></span>
+        </button>
+      </div>
+    </div>
+    <!-- hamburger -->
+    <div class="mobiletogglemenu" id="mobiletogglemenu">
+      <ul class="mobile-navbar-tabs-ul" id="mobile-ul">
+        <li id="home-mobile-tab" class="mobile-navbar-tabs-li home activeThismobiletab" onclick="hidemenubyli()">
+          <a href="#home" tabindex="0" aria-label="Home menu button">
+            &#60;/Home&#62;
+          </a>
+        </li>
+
+        <li id="aboutme-mobile-tab" class="mobile-navbar-tabs-li about" onclick="hidemenubyli()">
+          <a href="#about" tabindex="0" aria-label="about menu button">
+            &#60;/AboutMe&#62;
+          </a>
+        </li>
+        <li id="skills-mobile-tab" class="mobile-navbar-tabs-li skills" onclick="hidemenubyli()">
+          <a href="#skills" tabindex="0" aria-label="skills menu button">
+            &#60;/Skills&#62;
+          </a>
+        </li>
+        <li id="projects-mobile-tab" class="mobile-navbar-tabs-li projects" onclick="hidemenubyli()">
+          <a href="#projects" tabindex="0" aria-label="projects menu button">
+            &#60;/Projects&#62;
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- mobile toggle menu ends -->
+
+    <section class="landing-page-container" id="home">
+      <div class="blob"></div>
+
+      <div class="text-content">
+        <article id="hello-friend" data-aos="fade-up" data-aos-delay="0">
+          <p class="jello">O</p>
+          <p class="jello">O</p>
+          <p class="jello">P</p>
+          <p class="jello">S</p>
+          <p class="jello">!</p>
+          &nbsp;
+          <p class="jello">E</p>
+          <p class="jello">R</p>
+          <p class="jello">R</p>
+          <p class="jello">O</p>
+          <p class="jello">R</p>
+          &nbsp;
+          <p class="jello">4</p>
+          <p class="jello">0</p>
+          <p class="jello">4</p>
+          &nbsp;
+        </article>
+        <article id="name" data-aos="fade-up" data-aos-delay="200">
+          <p class="jello">P</p>
+          <p class="jello">A</p>
+          <p class="jello">G</p>
+          <p class="jello">E</p>
+          &nbsp;
+          <p class="jello">N</p>
+          <p class="jello">O</p>
+          <p class="jello">T</p>
+          &nbsp;
+          <p class="jello">F</p>
+          <p class="jello">O</p>
+          <p class="jello">U</p>
+          <p class="jello">N</p>
+          <p class="jello">D</p>
+        </article>
+        </article>
+        <p id="info-para" data-aos="fade-up" data-aos-delay="600">
+            It looks like you've stumbled upon a page that doesn't exist. Don't worry, it happens to the best of us.
+        </p>
+<br>
+<br>
+<br>
+<a class="bn49" href="/"><h1>Return Home</h1></a>
+
+</div>
+        
+<style>
+.bn49 {
+    font-size:12px;
+    margin-left:-10px;
+  border: 0;
+  text-align: center;
+  display: inline-block;
+  padding: 14px;
+  width: 150px;
+  color: #ffffff;
+  background-color: #36a2eb;
+  border-radius: 8px;
+  font-family: "proxima-nova-soft", sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  transition: box-shadow 200ms ease-out;
+}
+</style>
+  </main>
+
+  <!-- footer ends here -->
+
+  <script src="main.js"></script>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+  <script>
+    function openURL() {
+      var url = "src/pdf/Alexander Holm Resume.pdf";
+
+      window.open(url, "_blank");
+    }
+  </script>
+
+  <script>
+    const cursorInner = document.getElementById("cursor-inner");
+    const cursorOuter = document.getElementById("cursor-outer");
+    const links = document.querySelectorAll("a,label,button");
+
+    document.addEventListener("mousemove", function (e) {
+      const posX = e.clientX;
+      const posY = e.clientY;
+
+      cursorInner.style.left = `${posX}px`;
+      cursorInner.style.top = `${posY}px`;
+
+      // cursorOuter.style.left = `${posX}px`;
+      // cursorOuter.style.top = `${posY}px`;
+
+      cursorOuter.animate(
+        {
+          left: `${posX}px`,
+          top: `${posY}px`,
+        },
+        { duration: 500, fill: "forwards" }
+      );
+
+      links.forEach((link) => {
+        link.addEventListener("mouseenter", () => {
+          cursorInner.classList.add("hover");
+          cursorOuter.classList.add("hover");
+        });
+        link.addEventListener("mouseleave", () => {
+          cursorInner.classList.remove("hover");
+          cursorOuter.classList.remove("hover");
+        });
+      });
+    });
+  </script>
+
+</body>
+<script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
+  data-id="alex404hm" data-description="Support me on Buy me a coffee!" data-message="" data-color="#5F7FFF"
+  data-position="left" data-x_margin="18" data-y_margin="18"></script>
+
+</html>
