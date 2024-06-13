@@ -1,33 +1,16 @@
-<?xml version="1.0" encoding="utf-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    <url>
-        <loc>https://vinodjangid.site</loc>
-        <lastmod>2024-03-08</lastmod>
-        <changefreq>always</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
-        <loc>https://vinodjangid.site/AXOCEAN</loc>
-        <lastmod>2024-03-08</lastmod>
-        <changefreq>always</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
-        <loc>https://vinodjangid.site/Pexelicons</loc>
-        <lastmod>2024-03-08</lastmod>
-        <changefreq>always</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
-        <loc>https://vinodjangid.site/Aquaregia</loc>
-        <lastmod>2024-03-08</lastmod>
-        <changefreq>always</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
-        <loc>https://vinodjangid.site/QR-Generator</loc>
-        <lastmod>2024-03-08</lastmod>
-        <changefreq>always</changefreq>
-        <priority>0.5</priority>
-    </url>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://alexander-holm.com/</loc>
+  <lastmod>2024-06-13T14:28:30+00:00</lastmod>
+</url>
+
+
 </urlset>
