@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://alexander-holm.com/sitemap.xml
