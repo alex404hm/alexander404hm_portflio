@@ -14,19 +14,6 @@
             })
             .catch(error => console.error('Error loading JSON-LD:', error));
     </script>
-    <div class="search-container">
-        <input type="text" id="searchTerm" placeholder="Enter your search term">
-        <button onclick="performSearch()">Search</button>
-    </div>
-
-    <script>
-        function performSearch() {
-            var searchTerm = document.getElementById("searchTerm").value;
-            var encodedSearchTerm = encodeURIComponent(searchTerm);
-            var url = "https://alexander-holm.com/search?q=" + encodedSearchTerm;
-            window.location.href = url;
-        }
-    </script>
 <!-- Important -->
 <meta charset="UTF-8" />
 	<link rel="icon" type="image/x-icon" href="/test.png">
@@ -645,7 +632,19 @@
     </section>
   </main>
   <!-- main ends here -->
+    <div class="search-container">
+        <input type="text" id="searchTerm" placeholder="Enter your search term">
+        <button onclick="performSearch()">Search</button>
+    </div>
 
+    <script>
+        function performSearch() {
+            var searchTerm = document.getElementById("searchTerm").value;
+            var encodedSearchTerm = encodeURIComponent(searchTerm);
+            var url = "https://alexander-holm.com/search?q=" + encodedSearchTerm;
+            window.location.href = url;
+        }
+    </script>
   <footer id="footer">
     <button class="fas" id="backtotopbutton" onclick="scrolltoTopfunction()">
       <article aria-label="Back to top">&#8592;BACK TO TOP</article>
