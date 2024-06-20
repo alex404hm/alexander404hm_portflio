@@ -14,7 +14,19 @@
             })
             .catch(error => console.error('Error loading JSON-LD:', error));
     </script>
+    <div class="search-container">
+        <input type="text" id="searchTerm" placeholder="Enter your search term">
+        <button onclick="performSearch()">Search</button>
+    </div>
 
+    <script>
+        function performSearch() {
+            var searchTerm = document.getElementById("searchTerm").value;
+            var encodedSearchTerm = encodeURIComponent(searchTerm);
+            var url = "https://alexander-holm.com/search?q=" + encodedSearchTerm;
+            window.location.href = url;
+        }
+    </script>
 <!-- Important -->
 <meta charset="UTF-8" />
 	<link rel="icon" type="image/x-icon" href="/test.png">
